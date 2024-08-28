@@ -9,5 +9,5 @@ export interface IArticleRepository {
 
     deleteArticle(id: string): Promise<void>;
 
-    updateArticle(id: string, article: Article): Promise<void>;
+    updateArticle(article: Article): Promise<void>;
 }

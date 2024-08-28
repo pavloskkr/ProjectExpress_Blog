@@ -29,7 +29,7 @@ export class RedisArticleRepository implements IArticleRepository {
         return articleData ? JSON.parse(articleData) : null;
     }
 
-    async updateArticle(id: string, article: Article): Promise<void> {
+    async updateArticle(article: Article): Promise<void> {
         const key = `${this.ARTICLE_PREFIX}${article.id}`;
         await redisClient.set(key, JSON.stringify(article));
     }
