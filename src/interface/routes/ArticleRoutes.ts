@@ -1,6 +1,12 @@
-import {Router} from "express";
-import {createArticle, deleteArticle, getArticle, getArticles, updateArticle} from "../controllers/ArticleController";
-import {authenticateToken} from "../middleware/auth";
+import { Router } from 'express';
+import {
+  createArticle,
+  deleteArticle,
+  getArticle,
+  getArticles,
+  updateArticle,
+} from '../controllers/ArticleController';
+import { authenticateToken } from '../middleware/auth';
 
 const router = Router();
 
